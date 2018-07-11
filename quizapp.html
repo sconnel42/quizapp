@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<header>
+    <title>Quiz Builder</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets.css">
+</header>
+
+<body>
+    <h1>Quiz Builder</h1>
+    <form action="#" method="GET">
+        <ul id="qList"></ul>
+        <input type="submit" value="Submit">
+    </form>
+    <select onchange="addNewQuestion(this.value)">
+        <option value="short">Short Answer</option>
+        <option value="long">Long Answer</option>
+        <option value="multiple">Multiple Choice</option>
+    </select>
+    <script type="text/javascript" src="assets.js"></script>
+
+</body>
+
+</html>
