@@ -1,3 +1,36 @@
+html,body {
+    border: 0;
+    padding 0;
+    margin: 0 auto;
+    background: #adccff;
+}
+
+#container {
+    width: 40%;
+    margin: 100px auto;
+    padding: 50px;
+    color: white;
+    background: #478cff;
+}
+
+.content-center {
+    text-align: center;
+    margin: auto;
+}
+
+#footer {}
+
+#item-dropdown {
+    width: 50%;
+    float: left;
+}
+
+#submit-container{
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+
 #qList {
     list-style: none;
 }

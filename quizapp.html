@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <header>
     <title>Quiz Builder</title>
@@ -7,18 +7,29 @@
 </header>
 
 <body>
-    <h1>Quiz Builder</h1>
     <form action="#" method="GET">
-        <ul id="qList"></ul>
-        <input type="submit" value="Submit">
+        <div id="container">
+            <div class="content-center">
+                <h1>Quiz Builder</h1>
+                    <ul id="qList"></ul>
+            </div>
+            <div id="footer">
+                <div id="item-dropdown">
+                    <select onchange="addNewQuestion(this.value)">
+                        <option value="short">Short Answer</option>
+                        <option value="long">Long Answer</option>
+                        <option value="multiple">Multiple Choice</option>
+                    </select>
+                </div>
+                <div id="submit-container">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
     </form>
-    <select onchange="addNewQuestion(this.value)">
-        <option value="short">Short Answer</option>
-        <option value="long">Long Answer</option>
-        <option value="multiple">Multiple Choice</option>
-    </select>
-    <script type="text/javascript" src="assets.js"></script>
 
+
+    <script type="text/javascript" src="assets.js"></script>
 </body>
 
 </html>
