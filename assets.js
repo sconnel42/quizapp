@@ -11,8 +11,10 @@ function addShortAnswer(listElement) {
 function addLongAnswer(listElement) {
     console.log('Add long answer');
     var next_num = listElement.children.length + 1;
+    var name = 'q' + next_num + 'Long';
     var li = document.createElement("li");
-    li.innerHTML = "Question " + next_num + ": <textarea name='q" + next_num + "Long' rows='4' cols='50'></textarea>";
+    li.innerHTML = "<span class='qLabel'><label for='" + name + "'>Question " + next_num + "</label></span>";
+    li.innerHTML += "<span class='question'><textarea id= '" + name + "' name='" + name + "' rows='4' cols='50'></textarea></span>";
     listElement.appendChild(li);
 }
 

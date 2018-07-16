@@ -5,6 +5,16 @@ html,body {
     background: #adccff;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
 #container {
     width: 40%;
     margin: 100px auto;
@@ -31,6 +41,6 @@ html,body {
     float: left;
 }
 
-#qList {
-    list-style: none;
+.qLabel {
+    text-align: left;
 }
